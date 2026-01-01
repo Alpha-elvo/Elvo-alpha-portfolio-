@@ -202,3 +202,34 @@ footer {
   background-color: #fff;
   border-top: 1px solid #eee;
 }
+.message-frame {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin: 30px auto;
+  max-width: 400px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.message-frame h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.message-icon {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  font-size: 28px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.message-icon:hover {
+  background-color: #0056b3;
+}
