@@ -1,3 +1,29 @@
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.message-icon {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  font-size: 28px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.message-icon:hover {
+  background-color: #0056b3;
+  animation: none; /* stops bouncing on hover for a clean feel */
+}
 /* Reset and base styles */
 * {
   margin: 0;
