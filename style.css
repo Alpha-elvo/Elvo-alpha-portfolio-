@@ -173,3 +173,7 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
+  color: #888;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
