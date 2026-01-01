@@ -159,3 +159,51 @@ footer {
   background-color: #fff;
   border-top: 1px solid #eee;
 }
+.get-in-touch {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fefefe;
+  border-bottom: 1px solid #eee;
+}
+
+.get-in-touch h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.get-in-touch p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-form input[type="email"] {
+  padding: 12px 15px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
