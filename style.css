@@ -213,8 +213,40 @@ footer {
 .message-button i {
   margin-right: 10px;
 }
+.support {
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
 
-.message-button:hover {
-  background-color: #0056b3;
+.support h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.support p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #444;
+  line-height: 1.8;
+}
+
+.support-button {
+  display: inline-block;
+  background-color: #ffdd00;
+  color: #000;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.support-button:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
