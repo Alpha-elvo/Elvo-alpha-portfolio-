@@ -1,60 +1,27 @@
-body {
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background: #fff;
+  background-color: #f9f9f9;
   color: #333;
-}
-
-.container {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-section {
-  margin-bottom: 40px;
-}
-.social-icons {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  font-size: 28px;
-  color: #444;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #007bff;
-}
-section {
-  padding: 60px 20px;
-  border-bottom: 1px solid #eee;
-}
-html {
   scroll-behavior: smooth;
 }
-.navbar {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  padding: 10px 0;
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
-  z-index: 1000;
 }
 
-.navbar a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -75,4 +42,63 @@ html {
 
 .navbar a:hover {
   color: #007bff;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  border-bottom: 1px solid #eee;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Project cards */
+.project {
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Social icons */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 12px;
+  font-size: 28px;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #888;
+  background-color: #fff;
+  border-top: 1px solid #eee;
 }
