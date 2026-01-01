@@ -1,29 +1,3 @@
-/* Bounce Animation */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.message-icon {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  font-size: 28px;
-  padding: 16px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  animation: bounce 2s infinite;
-}
-
-.message-icon:hover {
-  background-color: #0056b3;
-  animation: none; /* stops bouncing on hover for a clean feel */
-}
 /* Reset and base styles */
 * {
   margin: 0;
@@ -60,12 +34,27 @@ body {
   color: #007bff;
 }
 
-/* Container */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+/* Hero Section */
+.hero {
   text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.hero a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Projects */
@@ -127,10 +116,21 @@ body {
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  animation: bounce 2.5s ease-in-out infinite;
 }
 
 .message-icon:hover {
   background-color: #0056b3;
+  animation: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 /* Contact */
