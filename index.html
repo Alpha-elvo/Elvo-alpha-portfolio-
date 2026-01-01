@@ -3,72 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elvis Kibet Ngetich — Developer & Dreamer</title>
+  <title>Elvis Kibet Ngetich | Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">ElvoAlpha</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#support">Support</a></li>
-    </ul>
-    <div class="nav-actions">
-      <select class="language-select">
-        <option>EN</option>
-        <option>SW</option>
-      </select>
-      <button id="darkModeToggle">🌙</button>
+    <div class="nav-links">
+      <a href="#featured">Featured</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
+    <button id="darkModeToggle">🌙</button>
   </nav>
-<section id="projects" class="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>Weather CLI</h3>
-      <p>A command-line tool built in Python that fetches real-time weather data using an API.</p>
-      <a href="https://github.com/elvo-alpha/weather-cli" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Quote Generator API</h3>
-      <p>A simple REST API that returns random inspirational quotes. Built with Flask + JSON.</p>
-      <a href="https://github.com/elvo-alpha/quote-api" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>This very site — built from scratch using HTML, CSS, and Termux on a phone.</p>
-      <a href="https://github.com/elvo-alpha/Elvo-alpha-portfolio-" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-</section>
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Hello, how’re you doing?</h1>
-    <h2>Welcome to my website</h2>
-    <p>I’m Elvis Kibet Ngetich — a self-taught developer from Kericho, Kenya, building from a phone with a dream bigger than my screen.</p>
-  </header>
 
-  <!-- About Me Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
+  <!-- Hero -->
+  <div class="container">
+    <h1>Hello, welcome to my website</h1>
+    <p>I’m Elvis Kibet Ngetich — a self-taught developer from Kericho, Kenya.</p>
+    <p>I build APIs, apps, and legacy from a phone using Termux, free Wi-Fi, and pure grit.</p>
     <p>
-      I started coding from a mud house using Termux, free Wi-Fi, and VPNs — no laptop, just grit. My cousin, who went from Kenya to Yale and now works at Microsoft, showed me what’s possible. That spark turned into a mission.
+      Follow my journey:
+      <a href="https://github.com/elvo-alpha" target="_blank">GitHub</a> |
+      <a href="https://buymeacoffee.com/Elvoalpha" target="_blank">Buy Me a Coffee</a>
     </p>
-    <p>
-      I’m learning software engineering, building tools that solve real problems, and applying to top universities like MIT and Yale. I believe code is my way out — and my way to give back.
-    </p>
-    <p>
-      If you ever feel moved to support this journey — even with a kind word, a prayer, or a small gesture — you can <a href="https://buymeacoffee.com/Elvoalpha" target="_blank">buy me a coffee</a>. It helps me stay online, keep learning, and one day, afford a laptop.
-    </p>
+  </div>
+
+  <!-- Featured Project -->
+  <section id="featured" class="featured">
+    <h2>Featured Project</h2>
+    <div class="featured-card">
+      <h3><i class="fas fa-star"></i> elvo_api</h3>
+      <p>A RESTful API built using Flask inside Termux on my phone. It handles user data, login, and JSON responses — proof that backend systems can be built from scratch, even without a laptop.</p>
+      <div class="tech-stack">
+        <i class="devicon-python-plain colored" title="Python"></i>
+        <i class="devicon-flask-original colored" title="Flask"></i>
+        <i class="fas fa-terminal" title="Termux"></i>
+        <i class="fab fa-linux" title="Linux"></i>
+      </div>
+      <a href="https://github.com/elvo-alpha/elvoapi" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Other Noteworthy Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3><i class="fas fa-folder"></i> elvo_cli</h3>
+        <p>CLI tool to automate daily tasks — note-taking, reminders, file management. My personal assistant, built in Python on Termux.</p>
+        <div class="tech-stack">
+          <i class="devicon-python-plain colored"></i>
+          <i class="fas fa-terminal"></i>
+        </div>
+        <a href="https://github.com/elvo-alpha/elvocli" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-folder"></i> elvo_alpha</h3>
+        <p>My faceless content brand. I use Canva, CapCut, and trend psychology to create viral quotes and videos that inspire from the ground up.</p>
+        <div class="tech-stack">
+          <i class="fas fa-paint-brush"></i>
+          <i class="fas fa-video"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
+        <a href="https://www.tiktok.com/@officialelvo_" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-folder"></i> elvo_portfolio</h3>
+        <p>This very site — built and deployed entirely from my phone using Termux, GitHub, and raw HTML/CSS.</p>
+        <div class="tech-stack">
+          <i class="devicon-html5-plain colored"></i>
+          <i class="devicon-css3-plain colored"></i>
+          <i class="devicon-github-original colored"></i>
+        </div>
+        <a href="https://github.com/elvo-alpha/Elvo-alpha-portfolio-" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-folder"></i> elvo_quotes</h3>
+        <p>A quote generator for elvo_alpha. I use it to create original, viral quotes for my content drops. Built in Python, styled in Canva.</p>
+        <div class="tech-stack">
+          <i class="devicon-python-plain colored"></i>
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-folder"></i> elvo_tracker</h3>
+        <p>A GPS-based heatmap tracker for movement logs. Inspired by search-and-rescue tools, built with Python and Matplotlib.</p>
+        <div class="tech-stack">
+          <i class="devicon-python-plain colored"></i>
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-folder"></i> elvo_recover</h3>
+        <p>A tool to scan and recover deleted files from storage. Inspired by real-world data recovery tools, built in Python.</p>
+        <div class="tech-stack">
+          <i class="devicon-python-plain colored"></i>
+          <i class="fas fa-database"></i>
+        </div>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Always happy to connect</h2>
+    <p>If you’d like to collaborate, support, or just say hello — I’d love to hear from you.</p>
+    <div class="social-icons">
+      <a href="mailto:elvoscott616@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://facebook.com/NgetichTravis" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/elvoalpha" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@officialelvo_" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://github.com/elvo-alpha" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>© 2026 Elvis Kibet Ngetich. Built with love, code, and a phone.</p>
+  <footer>
+    <p>Built entirely from a phone using Termux. No excuses — just code.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+
 </body>
 </html>
